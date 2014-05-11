@@ -1,0 +1,19 @@
+!!!
+%html
+	%head
+		%title GoWhere
+		= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+		= javascript_include_tag 'application', 'data-turbolinks-track' => true
+		= csrf_meta_tags
+	%body
+		=render 'layouts/index/header'
+		=render 'layouts/index/message'
+		.row
+			=render 'layouts/index/leftbar'
+			= yield
+			=render 'layouts/index/rightbar'
+
+:javascript
+	$(document).ready(function(){
+		$('#msg').hide();
+	});
