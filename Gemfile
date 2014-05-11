@@ -1,4 +1,15 @@
-source 'https://rubygems.org'
+source 'http://ruby.taobao.org'
+
+gem 'bootstrap-sass'
+gem 'haml-rails'
+gem 'html2haml'
+gem 'simple_form'
+gem 'nested_form'
+gem 'devise'
+gem 'rolify'
+gem 'cancan'
+
+
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
